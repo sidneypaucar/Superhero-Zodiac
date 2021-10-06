@@ -5,42 +5,57 @@ const baseURL = `${DOMAIN}?apikey=${API_KEY}&format=json`;
 
 const superheroDesc = [
   {
-    name: "Wonder Woman", description:"Princess Diana"
+    name: "Wonder Woman", description: "Princess Diana"
   },
   {
-    name: "Flash", description:"Fastest Man Alive"
+    name: "Flash", description: "Fastest Man Alive"
   },
   {
-    name: "Superman", description:"Strongest man alive"
+    name: "Superman", description: "Strongest man alive"
   },
   {
-    name: "Mr. Fantastic", description:"Genius Intellect"
+    name: "Mr. Fantastic", description: "Genius Intellect"
   },
   {
-    name: "Harley Quinn", description:"Joker partner"
+    name: "Harley Quinn", description: "Joker partner"
   },
   {
-    name: "Wolverine", description:"Logan"
+    name: "Wolverine", description: "Logan"
   },
   {
-    name: "Spider-Man", description:"Web Slinger"
+    name: "Spider-Man", description: "Web Slinger"
   },
   {
-    name: "Doctor Strange", description:"Mystic Arts"
+    name: "Doctor Strange", description: "Mystic Arts"
   },
   {
-    name: "Captain America", description:"Americas Pride"
+    name: "Captain America", description: "Americas Pride"
   },
   {
-    name: "Batman", description:"Worlds Greatest Detective"
+    name: "Batman", description: "Worlds Greatest Detective"
   },
   {
-    name: "Hal Jordan", description:"Green Lantern"
+    name: "Hal Jordan", description: "Green Lantern"
   },
 ]
 
 
+const search = document.querySelector('#search');
 
-const superheroBtn = document.querySelector('.superHero').value
-const url = `https://comicvine.gamespot.com/api/characters/?apikey=${API_KEY}&format=json&filter=name:${superheroDesc}`
+search.addEventListener('click', (e) => {
+  e.preventDefault();
+  const superheroChoice = document.querySelector('.superHero').value
+  const url = `https://comicvine.gamespot.com/api/characters/?apikey=${API_KEY}&format=json&filter=name:${superheroDesc}`
 
+  fetch(url)
+    .then((results) => {
+      return results.json();
+    })
+    .then((resultsJSON) => {
+      console.log(resultsJSON);
+    })
+    .catch((error) => {
+      console.log(`ERROR: ${error}`);
+    });
+
+})
