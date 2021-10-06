@@ -1,46 +1,53 @@
 const DOMAIN = "https://comicvine.gamespot.com/api/";
 const API_KEY = "35b9fcfad8457fe14de0144d69c23c67219e8fc3";
-const BASE_URL = `${DOMAIN}?apikey=${API_KEY}&`;
+const baseURL = `${DOMAIN}?apikey=${API_KEY}&format=json`;
+
 
 const superheroDesc = [
   {
-    id: "Wonder Woman", description:"Princess Diana"
+    name: "Wonder Woman", description:"Princess Diana"
   },
   {
-    id: "Flash", description:"Fastest Man Alive"
+    name: "Flash", description:"Fastest Man Alive"
   },
   {
-    id: "Superman", description:"Strongest man alive"
+    name: "Superman", description:"Strongest man alive"
   },
   {
-    id: "Mr. Fantastic", description:"Genius Intellect"
+    name: "Mr. Fantastic", description:"Genius Intellect"
   },
   {
-    id: "Harley Quinn", description:"Joker partner"
+    name: "Harley Quinn", description:"Joker partner"
   },
   {
-    id: "Wolverine", description:"Logan"
+    name: "Wolverine", description:"Logan"
   },
   {
-    id: "Spider-Man", description:"WEb Slinger"
+    name: "Spider-Man", description:"Web Slinger"
   },
   {
-    id: "Doctor Strange", description:"Mystic Arts"
+    name: "Doctor Strange", description:"Mystic Arts"
   },
   {
-    id: "Captain America", description:"Americas Pride"
-  },  {
-    id: "Batman", description:"Worlds Greatest Detective"
+    name: "Captain America", description:"Americas Pride"
   },
   {
-    id: "Hal Jordan", description:"Green Lantern"
+    name: "Batman", description:"Worlds Greatest Detective"
   },
-
-
-
-
-
-
-
-
+  {
+    name: "Hal Jordan", description:"Green Lantern"
+  },
 ]
+
+// const search = document.querySelector("form")
+
+// search.addEventListener("submit", () => {
+
+// })
+
+// fetch(`${DOMAIN}?apikey=${API_KEY}&`)
+//   .then((response) => {
+//     console.log(response);
+  
+const showHero = (name) => {
+  fetch(`${DOMAIN}?apikey=${API_KEY}&format=json`)
