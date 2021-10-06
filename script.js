@@ -41,5 +41,6 @@ const superheroDesc = [
 
 
 
-const superHero = document.querySelector('.superHero').value
-const url = `https://comicvine.gamespot.com/api/characters/?apikey=${API_KEY}&format=json&filter=name:${superHero}`
+const superheroBtn = document.querySelector('.superHero').value
+const url = `https://comicvine.gamespot.com/api/characters/?apikey=${API_KEY}&format=json&filter=name:${superheroDesc}`
+
