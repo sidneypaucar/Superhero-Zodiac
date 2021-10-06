@@ -39,15 +39,7 @@ const superheroDesc = [
   },
 ]
 
-// const search = document.querySelector("form")
 
-// search.addEventListener("submit", () => {
 
-// })
-
-// fetch(`${DOMAIN}?apikey=${API_KEY}&`)
-//   .then((response) => {
-//     console.log(response);
-  
-const showHero = (name) => {
-  fetch(`${DOMAIN}?apikey=${API_KEY}&format=json`)
+const superHero = document.querySelector('.superHero').value
+const url = `https://comicvine.gamespot.com/api/characters/?apikey=${API_KEY}&format=json&filter=name:${superHero}`
