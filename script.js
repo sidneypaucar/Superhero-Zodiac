@@ -1,8 +1,10 @@
-const DOMAIN = "https://comicvine.gamespot.com/api/";
-const API_KEY = "7173bfdf6e4e625b71d3227640d76fcfb508f6de";
-const baseURL = `${DOMAIN}?api_key=${API_KEY}&format=json`;
+//-------------API KEY
 
+const DOMAIN = "https://superheroapi.com/api/";
+const API_KEY = "3232678883523279";
+const baseURL = `${DOMAIN}/${API_KEY}`;
 
+//--------description of each superhero
 const superheroDesc = [
   {
     name: "Wonder Woman", description: "Princess Diana"
@@ -39,13 +41,15 @@ const superheroDesc = [
   },
 ]
 
-
+//-----Event Listener
 const search = document.querySelector('#search');
 
+//-- API Call Request 
 search.addEventListener('click', (e) => {
   e.preventDefault();
+
   const superheroChoice = document.querySelector('.superHero').value
-  const url = `https://comicvine.gamespot.com/api/characters/?api_key=${API_KEY}&format=json&filter=name:${superheroChoice}`
+  const url = `https://superheroapi.com/api/${API_KEY}/${superheroChoice}`
 
   fetch(url)
     .then((results) => {
