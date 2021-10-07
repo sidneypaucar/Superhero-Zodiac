@@ -39,7 +39,7 @@ const superheroDesc = [
   {
     name: "Hal Jordan", description: "Green Lantern"
   },
-]
+];
 
 //-----Event Listener
 const search = document.querySelector('#search');
@@ -49,7 +49,7 @@ search.addEventListener('click', (e) => {
   e.preventDefault();
 
   const superheroChoice = document.querySelector('.superHero').value
-  const url = `https://superheroapi.com/api/3232678883523279/${superheroChoice}/image`
+  const url = `https://www.superheroapi.com/api/3232678883523279/${superheroChoice}/image`
 
   fetch(url)
     .then((results) => {
@@ -61,4 +61,4 @@ search.addEventListener('click', (e) => {
     .catch((error) => {
       console.log(`ERROR: ${error}`);
     });
-})
+});

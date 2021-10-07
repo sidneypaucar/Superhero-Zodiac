@@ -3,28 +3,11 @@ App Title: SuperHero Zodiac
 Description: User enters his/her astrology sign and is given a super hero with a similar sign along with some suggested reads.
 
  API:
-http://comicvine.gamespot.com/api/
+https://superheroapi.com/api/
 
  API SNIPPET:
 
- results: [
-{
-aliases: "Diana Prince Diana of Themyscira Princess Diana Princess of the Amazons Goddess of Truth Diana the Goddess of Truth Wondy Wonder Girl The Amazon Princess",
-
-api_detail_url: "https://comicvine.gamespot.com/api/character/4005-2048/",
-
-birth: "Mar 21, 1881",
-
-count_of_issue_appearances: 7589,
-
-date_added: "2008-06-06 11:27:42",
-
-date_last_updated: "2021-06-26 19:18:25",
-
-...}
-
-
-
+{"response":"success","id":"306","name":"Hal Jordan","powerstats":{"intelligence":"69","strength":"90","speed":"75","durability":"80","power":"100","combat":"70"}
 
 
 Wireframes: https://www.figma.com/file/wfVRkzck1RpoyuD74hp4Lu/Untitled?node-id=0%3A1

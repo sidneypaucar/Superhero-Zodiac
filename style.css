@@ -1,3 +1,25 @@
+
+
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+.images_row{
+  display:flex;
+    padding: 10px;
+    margin: 10px;
+}
+
+
+h1{
+  background-color: black;
+  text-align: center;
+  color: white;
+  height: 50px;
+}
+
 body{
   background-color: #E0B954;
 }
