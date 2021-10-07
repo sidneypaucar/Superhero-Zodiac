@@ -42,39 +42,16 @@ const superheroDesc = [
 ];
 
 //-----Event Listener
-// const search = document.querySelector('#search');
-
-// //-- API Call Request 
-// const superHeroAPI = () => {
-    
-// }
-
-// search.addEventListener('click', (e) => {
-//   e.preventDefault();
-
-//   const superheroChoice = document.querySelector('.superHero').value;
-//   const url = `https://www.superheroapi.com/api.php/3232678883523279/${superheroChoice}/image`;
-
-//   fetch(url)
-//     .then((results) => {
-//       return results.json();
-//     })
-//     .then((resultsJSON) => {
-//       console.log(resultsJSON);
-//     })
-//     .catch((error) => {
-//       console.log(`ERROR: ${error}`);
-//     });
-// });
-//=====================================================
 const search = document.querySelector('#search');
 
 //-- API Call Request 
-const superHeroAPI = (superheroChoice) => {
-    const url = `https://www.superheroapi.com/api.php/3232678883523279/${superheroChoice}/image`;
-}
+search.addEventListener('click', (ev) => {
+  ev.preventDefault();
 
-  fetch(url)
+  const superheroChoice = document.querySelector('.superHero').value;
+  const url = `https://www.superheroapi.com/api.php/3232678883523279/${superheroChoice}/image`;
+
+  fetch(`${url}`)
     .then((results) => {
       return results.json();
     })
@@ -84,10 +61,9 @@ const superHeroAPI = (superheroChoice) => {
     .catch((error) => {
       console.log(`ERROR: ${error}`);
     });
-
-search.addEventListener('click', (e) => {
-  e.preventDefault();
-
-  const superheroChoice = document.querySelector('.superHero').value;
-  
 });
+
+
+
+//show superheror data
+//create variabble
