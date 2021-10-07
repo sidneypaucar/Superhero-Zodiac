@@ -2,7 +2,7 @@
 
 const DOMAIN = "https://superheroapi.com/api/";
 const API_KEY = "3232678883523279";
-const baseURL = `${DOMAIN}/${API_KEY}`;
+const baseURL = `${DOMAIN}${API_KEY}`;
 
 //--------description of each superhero
 const superheroDesc = [
@@ -49,7 +49,7 @@ search.addEventListener('click', (e) => {
   e.preventDefault();
 
   const superheroChoice = document.querySelector('.superHero').value
-  const url = `https://superheroapi.com/api/${API_KEY}/${superheroChoice}`
+  const url = `https://superheroapi.com/api/3232678883523279/${superheroChoice}/image`
 
   fetch(url)
     .then((results) => {
