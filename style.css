@@ -1,4 +1,25 @@
+body{
+  background-color: #E0B954;
+  margin:0;
+}
 
+h1{
+  background-color: black;
+  color: whitesmoke;
+  letter-spacing: 5px;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  margin-top: 0;
+  margin-left: 0%;
+  padding: 20px;
+  font-weight: bolder;
+  font-size: 50px;
+  display:flex;
+  justify-content: center;
+
+}
 
 img {
   width: 100%;
@@ -8,19 +29,27 @@ img {
 
 .images_row{
   display:flex;
-    padding: 10px;
-    margin: 10px;
+  flex-wrap: wrap;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
 }
 
-
-h1{
-  background-color: black;
+p{
+  color: black;
+  font-size: 40px;
   text-align: center;
-  color: white;
-  height: 50px;
+  background-color: #8e8e8e;
+  padding: 50px;
 }
 
-body{
-  background-color: #E0B954;
+button{
+  color:whitesmoke;
+  font-weight: bolder;
+  background-color: rgb(171, 38, 38);
+  border-color: rgb(171, 38, 38);
+  border-style: none;
+
 }
+
 
