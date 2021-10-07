@@ -1,6 +1,6 @@
 const DOMAIN = "https://comicvine.gamespot.com/api/";
-const API_KEY = "35b9fcfad8457fe14de0144d69c23c67219e8fc3";
-const baseURL = `${DOMAIN}?apikey=${API_KEY}&format=json`;
+const API_KEY = "7173bfdf6e4e625b71d3227640d76fcfb508f6de";
+const baseURL = `${DOMAIN}?api_key=${API_KEY}&format=json`;
 
 
 const superheroDesc = [
@@ -45,7 +45,7 @@ const search = document.querySelector('#search');
 search.addEventListener('click', (e) => {
   e.preventDefault();
   const superheroChoice = document.querySelector('.superHero').value
-  const url = `https://comicvine.gamespot.com/api/characters/?apikey=${API_KEY}&format=json&filter=name:${superheroDesc}`
+  const url = `https://comicvine.gamespot.com/api/characters/?api_key=${API_KEY}&format=json&filter=name:${superheroChoice}`
 
   fetch(url)
     .then((results) => {
@@ -57,5 +57,4 @@ search.addEventListener('click', (e) => {
     .catch((error) => {
       console.log(`ERROR: ${error}`);
     });
-
 })
