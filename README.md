@@ -48,7 +48,7 @@ https://superheroapi.com/api/
 
 ##Code Snippet
 
-I spent most of the week going back and forth trying to retreive the proper API data results from different API keys but I was always met with the same issue: Unable to fetch api due to cors restrictions. Instructor, IA and TA were involved but couldnt seem to find the cause. It was only after tampering with the universe itself that me and Carrie(TA) were able to solve the issue. A string interpolation was added into the fetch's parameter, which then properly called the url. It makes sense now however all recorded lectures did not have to use one, nor did my fellow peers. I was able to get past this massive roadblock and was able to proceed with the projects.
+I spent most of the week going back and forth trying to retreive the proper API data results from different API keys but I was always met with the same issue: Unable to fetch api due to cors restrictions. It was only after tampering with the universe itself that my T.A Carrie and I were able to solve the issue. A string interpolation was added into the fetch's parameter, which then properly called the url. It makes sense now however all recorded lectures did not have to use one, nor did my fellow peers. I was able to get past this massive roadblock and was able to proceed with the rest of the project.
 
 ```
 const url = `https://www.superheroapi.com/api.php/3232678883523279/${superheroChoice}/image`;
