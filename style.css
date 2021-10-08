@@ -1,6 +1,6 @@
 html {
   text-align: center;
-  width: auto;
+  width: 100%;
 }
 
 body{
@@ -36,10 +36,15 @@ img {
 
 p{
   color: black;
-  font-size: 30px;
+  font-family: "Bangers", serif;
+  font-size: 40px;
   text-align: center;
   font-style:inherit;
   padding: 40px;
+}
+
+.images_row{
+  text-align: center;
 }
 
 #hero-images{
@@ -58,6 +63,7 @@ p{
 
 button{
   color:whitesmoke;
+  font-family:monospace;
   font-weight: bolder;
   background-color: rgb(171, 38, 38);
   border-color: rgb(171, 38, 38);
@@ -68,6 +74,7 @@ button{
 
 .footer{
   position:bottom;
+  font-family:monospace;
   bottom: 0;
   width: 100%;
   padding: 30px;
