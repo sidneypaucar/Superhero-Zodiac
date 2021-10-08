@@ -1,3 +1,8 @@
+html {
+  text-align: center;
+  width: auto;
+}
+
 body{
   background-color: #E0B954;
   margin:0;
@@ -26,9 +31,9 @@ h1{
 img {
   width: 100%;
   height: auto;
-  vertical-align: middle;
+  display:flex;
+  justify-content: center;
 }
-
 
 p{
   color: black;
@@ -38,10 +43,17 @@ p{
   padding: 40px;
 }
 
+#hero-images{
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+
+}
+
 .superHero {
   padding: 8px;
   border-radius: 0px;
-  margin: 5px 0px 5px 5px;
+  margin: 5px 0px 50px 0px;
 }
 
 
@@ -52,18 +64,31 @@ button{
   border-color: rgb(171, 38, 38);
   border-style: none;
   padding: 10px 15px 10px 15px;
-
+  margin: 5px 5px 50px 0px;
 }
 
 .footer{
   position:inherit;
   bottom: 0;
   width: 100%;
-  right: 15;
-  left: 15;
-  padding: 30px;
+  padding: 20px;
   color: whitesmoke;
   background-color: black;
   display:flex;
   justify-content: center;
+}
+
+@media only screen and (max-width: 700px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  p {
+    font-size: 24px;
+  }
 }
