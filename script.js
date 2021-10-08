@@ -47,9 +47,15 @@ const search = document.querySelector('#search');
 //-- API Call Request 
 search.addEventListener('click', (ev) => {
   ev.preventDefault();
+  console.log("the button was clicked");
+
+
+
 
   const superheroChoice = document.querySelector('.superHero').value;
   const url = `https://www.superheroapi.com/api.php/3232678883523279/${superheroChoice}/image`;
+
+
 
   fetch(`${url}`)
     .then((results) => {
@@ -57,13 +63,27 @@ search.addEventListener('click', (ev) => {
     })
     .then((resultsJSON) => {
       console.log(resultsJSON);
+      displaySuperHero(resultsJSON);
     })
+
     .catch((error) => {
       console.log(`ERROR: ${error}`);
     });
+
 });
 
+//Appending the heroes to the DOM
+const displaySuperHero = (heroImages) => {
 
+  const heroImagesDiv = document.querySelector('#hero-images');
 
-//show superheror data
-//create variabble
+//Setting heroImagesDiv to an empty string will delete/replace any information that's currently displayed before displaying a new selection that the user made.
+  heroImagesDiv.innerHTML = '';
+
+  const heroTag = document.createElement('img');
+  heroTag.src = heroImages.url;
+  heroTag.style.width = '75%';
+  heroImagesDiv.append(heroTag);
+}
+
+//Remove the shown heroes from the DOM

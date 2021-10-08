@@ -1,6 +1,7 @@
 body{
   background-color: #E0B954;
   margin:0;
+  text-align: center;
 }
 
 h1{
@@ -13,7 +14,7 @@ h1{
   margin: 0;
   margin-top: 0;
   margin-left: 0%;
-  padding: 20px;
+  padding: 30px;
   font-weight: bolder;
   font-size: 50px;
   display:flex;
@@ -37,11 +38,18 @@ img {
 
 p{
   color: black;
-  font-size: 40px;
+  font-size: 30px;
   text-align: center;
-
-  padding: 50px;
+  font-style:inherit;
+  padding: 40px;
 }
+
+.superHero {
+  padding: 8px;
+  border-radius: 0px;
+  margin: 5px 0px 5px 5px;
+}
+
 
 button{
   color:whitesmoke;
@@ -49,6 +57,7 @@ button{
   background-color: rgb(171, 38, 38);
   border-color: rgb(171, 38, 38);
   border-style: none;
+  padding: 10px 15px 10px 15px;
 
 }
 
