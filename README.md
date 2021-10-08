@@ -1,22 +1,36 @@
-App Title: SuperHero Zodiac
+##APP TITLE 
 
-Description: User enters his/her astrology sign and is given a super hero with a similar sign along with some suggested reads.
+SuperHero Zodiac
 
- API:
+##Description
+ User enters his/her astrology sign and is given a super hero with a similar sign.
+
+ ##API:
+
 https://superheroapi.com/api/
 
- API SNIPPET:
+ ##API SNIPPET
 
-{"response":"success","id":"306","name":"Hal Jordan","powerstats":{"intelligence":"69","strength":"90","speed":"75","durability":"80","power":"100","combat":"70"}
+```
+{
+    "response": "success",
+    "id": "720",
+    "name": "Wonder Woman",
+    "url": "https://www.superherodb.com/pictures2/portraits/10/100/807.jpg"
+}
+```
+
+##WIREFRAMES
+
+ https://www.figma.com/file/wfVRkzck1RpoyuD74hp4Lu/Untitled?node-id=0%3A1
 
 
-Wireframes: https://www.figma.com/file/wfVRkzck1RpoyuD74hp4Lu/Untitled?node-id=0%3A1
+##MVP 
 
 
-MVP - HTML, CSS AND JAVASCRIPT, IMAGES
-FLEXBOX
 
-POST MVP - Add a slideshow of heroes in the main page that cycles every 3 seconds.
+POST MVP
+.Add a slideshow of heroes in the main page that cycles every 3 seconds. Add links with some suggested reads
 
 GOALS
 .Use fetch to make a request to an external data source and insert some of the retreived data on to the DOM.
@@ -24,3 +38,4 @@ GOALS
 . Deployed site on Github Pages with no errors.
 
 TIMEFRAME
+
