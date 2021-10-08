@@ -29,13 +29,6 @@ img {
   vertical-align: middle;
 }
 
-.images_row{
-  display:flex;
-  flex-wrap: wrap;
-    padding: 0px;
-    margin: 0px;
-    flex-shrink: initial;
-}
 
 p{
   color: black;
