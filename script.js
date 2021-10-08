@@ -18,7 +18,7 @@ search.addEventListener('click', (ev) => {
   //stores the domain and personal api key along with one of the options the user chose, into a variable called url.
   const url = `https://www.superheroapi.com/api.php/3232678883523279/${superheroChoice}/image`;
   //Try/Catch function that fetches/gets the data stored in the variable named url. (follows a specific syntax order, a "Promise".)
-  fetch(`${url}`)
+  fetch(url)
     .then((results) => {
       return results.json();
     })
