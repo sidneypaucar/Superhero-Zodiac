@@ -17,6 +17,7 @@ h1{
   padding: 30px;
   font-weight: bolder;
   font-size: 50px;
+
   display:flex;
   justify-content: center;
 
@@ -61,17 +62,15 @@ button{
 
 }
 
-footer{
-  background-color: black;
-  color: whitesmoke;
-  letter-spacing: 5px;
-  height: 100%;
+.footer{
+  position:inherit;
+  bottom: 0;
   width: 100%;
-  text-align: center;
-  margin: 0;
-  padding: 10px 10px 0px 10px;
-  font-weight: thin;
-  font-size: 50px;
+  right: 15;
+  left: 15;
+  padding: 30px;
+  color: whitesmoke;
+  background-color: black;
   display:flex;
   justify-content: center;
 }

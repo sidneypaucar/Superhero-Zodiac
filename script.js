@@ -33,20 +33,18 @@ search.addEventListener('click', (ev) => {
     });
 });
 
-//======== Displays data to the DOM ===================
+//================= Displays data to the DOM ===================
+
 //This function's job will be to display the data on the page.(As well as remove.)
 
 //Called the parameter heroImages rather than "resultsJson"Line:26 because you can pass data as an arguement using a different name since they are isolated as separate code blocks. Basically Line:26 becomes the following line.(Line:40)
 function displaySuperHero(heroImages) {
   //Places the section of HTML that contains the id "hero-images" into the variable heroImagesDiv.
   const heroImagesDiv = document.querySelector('#hero-images');
-
   //Setting heroImagesDiv to an empty string will delete/replace any information that's currently displayed on the page before displaying a new selection that the user made. (Basically removes the shown data from the DOM)
   heroImagesDiv.innerHTML = '';
-
   //Creates an image element onto the page and stores it in a heroTag.
   const heroTag = document.createElement('img');
-
   //Adds the piece of data (In our case, we are looking for the image url) to the heroTag.
   heroTag.src = heroImages.url;
   //styles the heroTag in the document
