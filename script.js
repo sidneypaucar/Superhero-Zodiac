@@ -48,7 +48,7 @@ function displaySuperHero(heroImages) {
   //Adds the piece of data (In our case, we are looking for the image url) to the heroTag.
   heroTag.src = heroImages.url;
   //styles the heroTag in the document
-  heroTag.style.width = '75%';
+  heroTag.style.width = '50%';
   //adds the new value of the heroTag to the DOM to be displayed.
   heroImagesDiv.append(heroTag);
 }
