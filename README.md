@@ -72,4 +72,8 @@ const url = `https://www.superheroapi.com/api.php/3232678883523279/${superheroCh
 
 I ended up switching APIs because the original one (comicvine.api) kept on returning the cors error. After spending a couple of days we decided it be best to use another API entirely. Major setback.
 
+##Goals
+
+I would love to eventually be able to implement my post mvp ideas.
+
 
