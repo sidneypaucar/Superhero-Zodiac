@@ -1,11 +1,11 @@
-#SuperHero Zodiac
+# SuperHero Zodiac
 
 https://sidneypaucar.github.io/Superhero-Zodiac/
 
-##Description
+## Description
  User selects his/her zodiac sign and is given a super hero with a similar sign.
 
- ##API and Data Sample
+## API and Data Sample
 
 https://superheroapi.com/api/
 
@@ -18,22 +18,22 @@ https://superheroapi.com/api/
 }
 ```
 
-##WIREFRAMES
+## WIREFRAMES
 
  https://www.figma.com/community/file/1028251869676249816/Superhero-Zodiac
 
-##MVP 
+## MVP 
 
 - Build with HTML, CSS, and JavaScript.
 - Style using Flexbox or Grid.
 - Use fetch to make a request from the Superhero API and insert the retrieved data on to the DOM.
 - Implement responsive design for a device using at least one media query/breakpoint.
 
-##POST MVP
+## POST MVP
 
 - Add a slideshow of heroes in the main page that cycles every 3 seconds. Add links with some suggested reads.
 
-##TIMEFRAME
+## TIMEFRAME
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
@@ -46,7 +46,7 @@ https://superheroapi.com/api/
 | Adding Media Queries | H | 1hrs| 1.5hrs | 1.5hrs |
 | Total | H | 15hrs| 33.5hrs | 33.5hrs |
 
-##Code Snippet
+## Code Snippet
 
 I spent most of the week going back and forth trying to retreive the proper API data results from different API keys but I was always met with the same issue: Unable to fetch api due to cors restrictions. It was only after tampering with the universe itself that my T.A Carrie and I were able to solve the issue. A string interpolation was added into the fetch's parameter, which then properly called the url. It makes sense now however all recorded lectures did not have to use one, nor did my fellow peers. I was able to get past this massive roadblock and was able to proceed with the rest of the project.
 
@@ -68,11 +68,11 @@ const url = `https://www.superheroapi.com/api.php/3232678883523279/${superheroCh
 });
 ```
 
-##Change Log
+## Change Log
 
 I ended up switching APIs because the original one (comicvine.api) kept on returning the cors error. After spending a couple of days we decided it be best to use another API entirely. Major setback.
 
-##Goals
+## Goals
 
 I would love to eventually be able to implement my post mvp ideas.
 
